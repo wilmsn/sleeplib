@@ -53,3 +53,6 @@ void sleep4ms (unsigned long ms) {
     if (ms_left > 15) { dosleep(1); }
 }
 
+void sleep4s (float s) {
+	sleep4ms((unsigned long) s * 1000);
+}	

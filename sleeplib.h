@@ -22,5 +22,6 @@ void watchdogEvent();
 /// sleep4ms(1000); // Sleeptime in milliseconds
 ///
 void sleep4ms (unsigned long ms);
+void sleep4s (float s);
 
 #endif
