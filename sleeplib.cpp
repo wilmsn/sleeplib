@@ -51,6 +51,8 @@ void sleep4ms (unsigned long ms) {
     if (ms_left > 60) { dosleep(2); ms_left=ms_left-60; }
     if (ms_left > 30) { dosleep(1); ms_left=ms_left-30; }
     if (ms_left > 15) { dosleep(1); }
+    // give Arduino some time to go to normal operation again
+    delay(10);
 }
 
 void sleep4s (float s) {
